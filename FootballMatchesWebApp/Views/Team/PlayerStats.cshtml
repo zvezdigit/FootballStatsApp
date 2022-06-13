@@ -1,0 +1,44 @@
+﻿
+@using FootballMatchesWebApp.Application.Models.Teams
+@model TeamPlayerStatsViewModel
+@{
+    ViewData["Title"] = "Teams";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Player Stats</h3>
+                <div class="card-tools">
+                    
+                </div>
+            </div>
+
+            <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                    <thead>
+                        <tr>
+                             <th>League</th>
+                            <th>Season</th>
+                            <th>Goal Scored</th>
+                            <th>Appearances</th>
+                            <th>Minutes Played</th>
+                            <th>Position</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>@Model.League.LeagueName</td>
+                                <td>@Model.Season</td>
+                                <td>@Model.GoalsScored</td>
+                                 <td>@Model.Appearances</td>
+                                  <td>@Model.MinutesPlayed</td>
+                                   <td>@Model.Position</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

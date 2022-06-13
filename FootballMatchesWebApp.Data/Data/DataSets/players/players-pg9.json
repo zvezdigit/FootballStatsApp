@@ -1,0 +1,2138 @@
+{
+    "errors": [],
+    "get": "players",
+    "paging": {
+        "current": 9,
+        "total": 41
+    },
+    "parameters": {
+        "league": "39",
+        "page": "9",
+        "season": "2021"
+    },
+    "response": [
+        {
+            "player": {
+                "age": 25,
+                "birth": {
+                    "country": "England",
+                    "date": "1997-04-13",
+                    "place": "London"
+                },
+                "firstname": "Kyle",
+                "height": "173 cm",
+                "id": 171,
+                "injured": false,
+                "lastname": "Walker-Peters",
+                "name": "K. Walker-Peters",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/171.png",
+                "weight": "62 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 5,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 95,
+                        "past": null,
+                        "success": 64
+                    },
+                    "duels": {
+                        "total": 334,
+                        "won": 195
+                    },
+                    "fouls": {
+                        "committed": 27,
+                        "drawn": 47
+                    },
+                    "games": {
+                        "appearences": 32,
+                        "captain": false,
+                        "lineups": 29,
+                        "minutes": 2632,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": "6.864516"
+                    },
+                    "goals": {
+                        "assists": 2,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 1
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 28,
+                        "key": 24,
+                        "total": 1088
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 7,
+                        "total": 15
+                    },
+                    "substitutes": {
+                        "bench": 8,
+                        "in": 3,
+                        "out": 2
+                    },
+                    "tackles": {
+                        "blocks": 8,
+                        "interceptions": 37,
+                        "total": 57
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 26,
+                "birth": {
+                    "country": "England",
+                    "date": "1996-04-11",
+                    "place": "Milton Keynes"
+                },
+                "firstname": "Bamidele",
+                "height": "188 cm",
+                "id": 172,
+                "injured": false,
+                "lastname": "Alli",
+                "name": "D. Alli",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/172.png",
+                "weight": "76 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 3,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 14,
+                        "past": null,
+                        "success": 5
+                    },
+                    "duels": {
+                        "total": 64,
+                        "won": 28
+                    },
+                    "fouls": {
+                        "committed": 9,
+                        "drawn": 7
+                    },
+                    "games": {
+                        "appearences": 11,
+                        "captain": false,
+                        "lineups": 1,
+                        "minutes": 329,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.670000"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 9,
+                        "key": 8,
+                        "total": 148
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": 1
+                    },
+                    "substitutes": {
+                        "bench": 17,
+                        "in": 10,
+                        "out": 1
+                    },
+                    "tackles": {
+                        "blocks": 2,
+                        "interceptions": 6,
+                        "total": 7
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                },
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 1,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 14,
+                        "past": null,
+                        "success": 5
+                    },
+                    "duels": {
+                        "total": 64,
+                        "won": 28
+                    },
+                    "fouls": {
+                        "committed": 9,
+                        "drawn": 7
+                    },
+                    "games": {
+                        "appearences": 10,
+                        "captain": false,
+                        "lineups": 8,
+                        "minutes": 658,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.670000"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 1
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 9,
+                        "key": 8,
+                        "total": 148
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": 1
+                    },
+                    "substitutes": {
+                        "bench": 11,
+                        "in": 2,
+                        "out": 3
+                    },
+                    "tackles": {
+                        "blocks": 2,
+                        "interceptions": 6,
+                        "total": 7
+                    },
+                    "team": {
+                        "id": 47,
+                        "logo": "https://media.api-sports.io/football/teams/47.png",
+                        "name": "Tottenham"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 25,
+                "birth": {
+                    "country": "Netherlands",
+                    "date": "1997-04-18",
+                    "place": "Nijkerkerveen"
+                },
+                "firstname": "Donny",
+                "height": "184 cm",
+                "id": 547,
+                "injured": false,
+                "lastname": "van de Beek",
+                "name": "D. van de Beek",
+                "nationality": "Netherlands",
+                "photo": "https://media.api-sports.io/football/players/547.png",
+                "weight": "76 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 1,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 9,
+                        "past": null,
+                        "success": 3
+                    },
+                    "duels": {
+                        "total": 57,
+                        "won": 26
+                    },
+                    "fouls": {
+                        "committed": 7,
+                        "drawn": 1
+                    },
+                    "games": {
+                        "appearences": 7,
+                        "captain": false,
+                        "lineups": 5,
+                        "minutes": 483,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.585714"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 1
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 29,
+                        "key": 2,
+                        "total": 242
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 1,
+                        "total": 3
+                    },
+                    "substitutes": {
+                        "bench": 4,
+                        "in": 2,
+                        "out": 2
+                    },
+                    "tackles": {
+                        "blocks": 2,
+                        "interceptions": 6,
+                        "total": 15
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                },
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 0,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 9,
+                        "past": null,
+                        "success": 3
+                    },
+                    "duels": {
+                        "total": 57,
+                        "won": 26
+                    },
+                    "fouls": {
+                        "committed": 7,
+                        "drawn": 1
+                    },
+                    "games": {
+                        "appearences": 8,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 67,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.585714"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 1
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 29,
+                        "key": 2,
+                        "total": 242
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 1,
+                        "total": 3
+                    },
+                    "substitutes": {
+                        "bench": 22,
+                        "in": 8,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": 2,
+                        "interceptions": 6,
+                        "total": 15
+                    },
+                    "team": {
+                        "id": 33,
+                        "logo": "https://media.api-sports.io/football/teams/33.png",
+                        "name": "Manchester United"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 41,
+                "birth": {
+                    "country": "Argentina",
+                    "date": "1981-09-28",
+                    "place": "Entre Ríos"
+                },
+                "firstname": "Wilfredo Daniel",
+                "height": "186 cm",
+                "id": 2275,
+                "injured": false,
+                "lastname": "Caballero",
+                "name": "W. Caballero",
+                "nationality": "Argentina",
+                "photo": "https://media.api-sports.io/football/players/2275.png",
+                "weight": "81 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 1,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": 1,
+                        "won": null
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": null
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "captain": false,
+                        "lineups": 2,
+                        "minutes": 180,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": "6.450000"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 5,
+                        "saves": 6,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 18,
+                        "key": null,
+                        "total": 60
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": 0,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 19,
+                        "in": 0,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": null
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 24,
+                "birth": {
+                    "country": "England",
+                    "date": "1998-06-30",
+                    "place": "Liverpool"
+                },
+                "firstname": "Tom",
+                "height": "180 cm",
+                "id": 18762,
+                "injured": false,
+                "lastname": "Davies",
+                "name": "T. Davies",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/18762.png",
+                "weight": "70 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 1,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 3,
+                        "past": null,
+                        "success": 2
+                    },
+                    "duels": {
+                        "total": 21,
+                        "won": 11
+                    },
+                    "fouls": {
+                        "committed": 4,
+                        "drawn": 3
+                    },
+                    "games": {
+                        "appearences": 6,
+                        "captain": false,
+                        "lineups": 2,
+                        "minutes": 232,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.550000"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 1
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 10,
+                        "key": null,
+                        "total": 81
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 2,
+                        "total": 3
+                    },
+                    "substitutes": {
+                        "bench": 13,
+                        "in": 4,
+                        "out": 1
+                    },
+                    "tackles": {
+                        "blocks": 1,
+                        "interceptions": 2,
+                        "total": 3
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 25,
+                "birth": {
+                    "country": "England",
+                    "date": "1997-03-16",
+                    "place": "Sheffield"
+                },
+                "firstname": "Dominic",
+                "height": "187 cm",
+                "id": 18766,
+                "injured": false,
+                "lastname": "Calvert-Lewin",
+                "name": "D. Calvert-Lewin",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/18766.png",
+                "weight": "71 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 2,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 11,
+                        "past": null,
+                        "success": 2
+                    },
+                    "duels": {
+                        "total": 260,
+                        "won": 123
+                    },
+                    "fouls": {
+                        "committed": 17,
+                        "drawn": 16
+                    },
+                    "games": {
+                        "appearences": 17,
+                        "captain": false,
+                        "lineups": 15,
+                        "minutes": 1286,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": "6.923529"
+                    },
+                    "goals": {
+                        "assists": 2,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 5
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 9,
+                        "key": 10,
+                        "total": 277
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 1,
+                        "saved": null,
+                        "scored": 2,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 13,
+                        "total": 27
+                    },
+                    "substitutes": {
+                        "bench": 5,
+                        "in": 2,
+                        "out": 6
+                    },
+                    "tackles": {
+                        "blocks": 2,
+                        "interceptions": 3,
+                        "total": 11
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 31,
+                "birth": {
+                    "country": "Germany",
+                    "date": "1991-06-07",
+                    "place": "Wetzlar"
+                },
+                "firstname": "Cenk",
+                "height": "183 cm",
+                "id": 18768,
+                "injured": false,
+                "lastname": "Tosun",
+                "name": "C. Tosun",
+                "nationality": "Turkey",
+                "photo": "https://media.api-sports.io/football/players/18768.png",
+                "weight": "78 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 0,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": 1,
+                        "won": null
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": null
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 6,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": "6.200000"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 1,
+                        "key": null,
+                        "total": 1
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 8,
+                        "in": 1,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": null
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 34,
+                "birth": {
+                    "country": "England",
+                    "date": "1988-03-17",
+                    "place": "Hexham"
+                },
+                "firstname": "Fraser",
+                "height": "201 cm",
+                "id": 18932,
+                "injured": false,
+                "lastname": "Forster",
+                "name": "F. Forster",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/18932.png",
+                "weight": "93 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 1,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": 12,
+                        "won": 11
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": 3
+                    },
+                    "games": {
+                        "appearences": 19,
+                        "captain": false,
+                        "lineups": 19,
+                        "minutes": 1710,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": "6.905263"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 35,
+                        "saves": 68,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 15,
+                        "key": null,
+                        "total": 530
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": 0,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 14,
+                        "in": 0,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": 1
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 25,
+                "birth": {
+                    "country": "England",
+                    "date": "1997-12-20",
+                    "place": "Shrewsbury"
+                },
+                "firstname": "Harry",
+                "height": "191 cm",
+                "id": 18934,
+                "injured": false,
+                "lastname": "Lewis",
+                "name": "H. Lewis",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/18934.png",
+                "weight": "77 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 0,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": null
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 0,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": null
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": null,
+                        "key": null,
+                        "total": null
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": 0,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 4,
+                        "in": 0,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": null
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 33,
+                "birth": {
+                    "country": "England",
+                    "date": "1989-12-03",
+                    "place": "Guildford"
+                },
+                "firstname": "Alex",
+                "height": "193 cm",
+                "id": 18935,
+                "injured": false,
+                "lastname": "McCarthy",
+                "name": "A. McCarthy",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/18935.png",
+                "weight": "79 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 1,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": 6,
+                        "won": 6
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": null
+                    },
+                    "games": {
+                        "appearences": 17,
+                        "captain": false,
+                        "lineups": 17,
+                        "minutes": 1530,
+                        "number": null,
+                        "position": "Goalkeeper",
+                        "rating": "6.735294"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 27,
+                        "saves": 44,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 14,
+                        "key": 1,
+                        "total": 430
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": 0,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 1,
+                        "in": 0,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": null
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 28,
+                "birth": {
+                    "country": "England",
+                    "date": "1994-01-27",
+                    "place": "Plymouth"
+                },
+                "firstname": "Jack",
+                "height": "185 cm",
+                "id": 18940,
+                "injured": false,
+                "lastname": "Stephens",
+                "name": "J. Stephens",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/18940.png",
+                "weight": "75 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 3,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "past": null,
+                        "success": 2
+                    },
+                    "duels": {
+                        "total": 66,
+                        "won": 36
+                    },
+                    "fouls": {
+                        "committed": 8,
+                        "drawn": 2
+                    },
+                    "games": {
+                        "appearences": 11,
+                        "captain": false,
+                        "lineups": 9,
+                        "minutes": 810,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": "6.654545"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 32,
+                        "key": 4,
+                        "total": 463
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 13,
+                        "in": 2,
+                        "out": 1
+                    },
+                    "tackles": {
+                        "blocks": 7,
+                        "interceptions": 19,
+                        "total": 19
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 27,
+                "birth": {
+                    "country": "Netherlands",
+                    "date": "1995-05-03",
+                    "place": "Barendrecht"
+                },
+                "firstname": "Anwar",
+                "height": "188 cm",
+                "id": 19195,
+                "injured": false,
+                "lastname": "El Ghazi",
+                "name": "A. El Ghazi",
+                "nationality": "Netherlands",
+                "photo": "https://media.api-sports.io/football/players/19195.png",
+                "weight": "90 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 0,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 10,
+                        "past": null,
+                        "success": 4
+                    },
+                    "duels": {
+                        "total": 60,
+                        "won": 23
+                    },
+                    "fouls": {
+                        "committed": 8,
+                        "drawn": 5
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 11,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.611111"
+                    },
+                    "goals": {
+                        "assists": 1,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 8,
+                        "key": 5,
+                        "total": 103
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 1,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 3,
+                        "total": 7
+                    },
+                    "substitutes": {
+                        "bench": 10,
+                        "in": 2,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": 1,
+                        "total": 4
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                },
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 2,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 10,
+                        "past": null,
+                        "success": 4
+                    },
+                    "duels": {
+                        "total": 60,
+                        "won": 23
+                    },
+                    "fouls": {
+                        "committed": 8,
+                        "drawn": 5
+                    },
+                    "games": {
+                        "appearences": 9,
+                        "captain": false,
+                        "lineups": 4,
+                        "minutes": 383,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.611111"
+                    },
+                    "goals": {
+                        "assists": 1,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 1
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 8,
+                        "key": 5,
+                        "total": 103
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 1,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 3,
+                        "total": 7
+                    },
+                    "substitutes": {
+                        "bench": 14,
+                        "in": 5,
+                        "out": 2
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": 1,
+                        "total": 4
+                    },
+                    "team": {
+                        "id": 66,
+                        "logo": "https://media.api-sports.io/football/teams/66.png",
+                        "name": "Aston Villa"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 25,
+                "birth": {
+                    "country": "France",
+                    "date": "1997-09-22",
+                    "place": "Toulouse"
+                },
+                "firstname": "Romain",
+                "height": "173 cm",
+                "id": 20600,
+                "injured": false,
+                "lastname": "Perraud",
+                "name": "Romain Perraud",
+                "nationality": "France",
+                "photo": "https://media.api-sports.io/football/players/20600.png",
+                "weight": "68 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 3,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 18,
+                        "past": null,
+                        "success": 8
+                    },
+                    "duels": {
+                        "total": 160,
+                        "won": 74
+                    },
+                    "fouls": {
+                        "committed": 31,
+                        "drawn": 16
+                    },
+                    "games": {
+                        "appearences": 20,
+                        "captain": false,
+                        "lineups": 18,
+                        "minutes": 1625,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": "6.595000"
+                    },
+                    "goals": {
+                        "assists": 1,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 18,
+                        "key": 8,
+                        "total": 534
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 3,
+                        "total": 14
+                    },
+                    "substitutes": {
+                        "bench": 17,
+                        "in": 2,
+                        "out": 4
+                    },
+                    "tackles": {
+                        "blocks": 6,
+                        "interceptions": 17,
+                        "total": 34
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 25,
+                "birth": {
+                    "country": "Brazil",
+                    "date": "1997-02-01",
+                    "place": "Vitória"
+                },
+                "firstname": "Lyanco Evangelista",
+                "height": "187 cm",
+                "id": 30476,
+                "injured": false,
+                "lastname": "Silveira Neves Vojnović",
+                "name": "Lyanco",
+                "nationality": "Brazil",
+                "photo": "https://media.api-sports.io/football/players/30476.png",
+                "weight": "85 kg"
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 2,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 4,
+                        "past": null,
+                        "success": 4
+                    },
+                    "duels": {
+                        "total": 85,
+                        "won": 48
+                    },
+                    "fouls": {
+                        "committed": 13,
+                        "drawn": 7
+                    },
+                    "games": {
+                        "appearences": 15,
+                        "captain": false,
+                        "lineups": 9,
+                        "minutes": 905,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": "6.621428"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 20,
+                        "key": 3,
+                        "total": 389
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 1,
+                        "total": 3
+                    },
+                    "substitutes": {
+                        "bench": 15,
+                        "in": 6,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": 13,
+                        "interceptions": 13,
+                        "total": 18
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 21,
+                "birth": {
+                    "country": "England",
+                    "date": "2001-02-24",
+                    "place": null
+                },
+                "firstname": "Anthony",
+                "height": null,
+                "id": 138787,
+                "injured": false,
+                "lastname": "Gordon",
+                "name": "Anthony Gordon",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/138787.png",
+                "weight": null
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 4,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 80,
+                        "past": null,
+                        "success": 38
+                    },
+                    "duels": {
+                        "total": 352,
+                        "won": 173
+                    },
+                    "fouls": {
+                        "committed": 25,
+                        "drawn": 64
+                    },
+                    "games": {
+                        "appearences": 35,
+                        "captain": false,
+                        "lineups": 25,
+                        "minutes": 2285,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": "6.867647"
+                    },
+                    "goals": {
+                        "assists": 2,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 4
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 13,
+                        "key": 36,
+                        "total": 613
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": 18,
+                        "total": 28
+                    },
+                    "substitutes": {
+                        "bench": 12,
+                        "in": 10,
+                        "out": 11
+                    },
+                    "tackles": {
+                        "blocks": 3,
+                        "interceptions": 22,
+                        "total": 54
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 19,
+                "birth": {
+                    "country": "England",
+                    "date": "2003-01-03",
+                    "place": null
+                },
+                "firstname": "Lewis Norman",
+                "height": null,
+                "id": 153425,
+                "injured": false,
+                "lastname": "Dobbin",
+                "name": "L. Dobbin",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/153425.png",
+                "weight": null
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 1,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 1,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": 12,
+                        "won": 3
+                    },
+                    "fouls": {
+                        "committed": 1,
+                        "drawn": 1
+                    },
+                    "games": {
+                        "appearences": 3,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 29,
+                        "number": null,
+                        "position": "Attacker",
+                        "rating": "6.300000"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 2,
+                        "key": null,
+                        "total": 8
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 11,
+                        "in": 3,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": 2
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 19,
+                "birth": {
+                    "country": "England",
+                    "date": "2003-03-04",
+                    "place": null
+                },
+                "firstname": "Tyler",
+                "height": null,
+                "id": 167657,
+                "injured": false,
+                "lastname": "Onyango",
+                "name": "T. Onyango",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/167657.png",
+                "weight": null
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 0,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": 1,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": 4,
+                        "won": 1
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": null
+                    },
+                    "games": {
+                        "appearences": 3,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 25,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "6.300000"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 1,
+                        "key": null,
+                        "total": 2
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 5,
+                        "in": 3,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": null
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 19,
+                "birth": {
+                    "country": "England",
+                    "date": "2003-09-16",
+                    "place": null
+                },
+                "firstname": "Charlie",
+                "height": null,
+                "id": 284185,
+                "injured": false,
+                "lastname": "Whitaker",
+                "name": "C. Whitaker",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/284185.png",
+                "weight": null
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 0,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": null
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 0,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": null
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": null,
+                        "key": null,
+                        "total": null
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 1,
+                        "in": 0,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": null
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 19,
+                "birth": {
+                    "country": "England",
+                    "date": "2003-09-26",
+                    "place": null
+                },
+                "firstname": "Isaac Jude",
+                "height": null,
+                "id": 284267,
+                "injured": false,
+                "lastname": "Price",
+                "name": "I. Price",
+                "nationality": "Northern Ireland",
+                "photo": "https://media.api-sports.io/football/players/284267.png",
+                "weight": null
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 0,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": 1,
+                        "won": null
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": null
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 12,
+                        "number": null,
+                        "position": "Midfielder",
+                        "rating": "5.900000"
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": 1,
+                        "key": null,
+                        "total": 2
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": 1
+                    },
+                    "substitutes": {
+                        "bench": 5,
+                        "in": 1,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": null
+                    },
+                    "team": {
+                        "id": 45,
+                        "logo": "https://media.api-sports.io/football/teams/45.png",
+                        "name": "Everton"
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "age": 18,
+                "birth": {
+                    "country": "England",
+                    "date": "2004-08-01",
+                    "place": null
+                },
+                "firstname": "Thierry",
+                "height": null,
+                "id": 284311,
+                "injured": false,
+                "lastname": "Small",
+                "name": "T. Small",
+                "nationality": "England",
+                "photo": "https://media.api-sports.io/football/players/284311.png",
+                "weight": null
+            },
+            "statistics": [
+                {
+                    "cards": {
+                        "red": 0,
+                        "yellow": 0,
+                        "yellowred": 0
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "past": null,
+                        "success": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "fouls": {
+                        "committed": null,
+                        "drawn": null
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "captain": false,
+                        "lineups": 0,
+                        "minutes": 0,
+                        "number": null,
+                        "position": "Defender",
+                        "rating": null
+                    },
+                    "goals": {
+                        "assists": null,
+                        "conceded": 0,
+                        "saves": null,
+                        "total": 0
+                    },
+                    "league": {
+                        "country": "England",
+                        "flag": "https://media.api-sports.io/flags/gb.svg",
+                        "id": 39,
+                        "logo": "https://media.api-sports.io/football/leagues/39.png",
+                        "name": "Premier League",
+                        "season": 2021
+                    },
+                    "passes": {
+                        "accuracy": null,
+                        "key": null,
+                        "total": null
+                    },
+                    "penalty": {
+                        "commited": null,
+                        "missed": 0,
+                        "saved": null,
+                        "scored": 0,
+                        "won": null
+                    },
+                    "shots": {
+                        "on": null,
+                        "total": null
+                    },
+                    "substitutes": {
+                        "bench": 3,
+                        "in": 0,
+                        "out": 0
+                    },
+                    "tackles": {
+                        "blocks": null,
+                        "interceptions": null,
+                        "total": null
+                    },
+                    "team": {
+                        "id": 41,
+                        "logo": "https://media.api-sports.io/football/teams/41.png",
+                        "name": "Southampton"
+                    }
+                }
+            ]
+        }
+    ],
+    "results": 20
+}
