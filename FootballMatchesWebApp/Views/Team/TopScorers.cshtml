@@ -1,0 +1,44 @@
+﻿
+@using FootballMatchesWebApp.Application.Models.Teams
+@model IEnumerable<TopScorersViewModel>
+@{
+    ViewData["Title"] = "Teams";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Top Scorers</h3>
+                <div class="card-tools">
+                     
+                </div>
+            </div>
+
+            <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>Player Id</th>
+                            <th>Player Name</th>
+                            <th>Nationality</th>
+                            <th>Total Goals</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var player in @Model)
+                        {
+                            <tr>
+                                <td>@player.Id</td>
+                                <td>@player.Name</td>
+                                 <td>@player.Nationality</td>
+                                  <td>@player.GoalsScored</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -115,5 +115,52 @@ namespace FootballMatchesWebApp.Application.Services
 
             return playerStats;
         }
+
+        public IEnumerable<TopScorersViewModel> TopScorers()
+        {
+            var topScorers = repository.All<Player>()
+                .Include(x => x.PlayerStats)
+                 .ThenInclude(x => x.League)
+                 .Select(x => new TopScorersViewModel
+                 {
+                     Id=x.Id,
+                     Name=x.Name,
+                     Nationality=x.Nationality,
+                     GoalsScored = x.PlayerStats.GoalsScored,
+                 }).OrderByDescending(x => x.GoalsScored)
+                 .Take(10)
+                  .ToList();
+
+            return topScorers;
+        }
+
+        public IEnumerable<TopTeamViewModel> TopTeams()
+        {
+            var homeWins = repository.All<Fixture>()
+                .Where(x => x.HomeGoals > x.AwayGoals)
+                .GroupBy(x => x.HomeTeam.Name, x => x.HomeGoals)
+                .Select(x => new { TeamName = x.Key, Goals = x.Sum() })
+                .OrderByDescending(x => x.Goals);
+
+            var awayWins = repository.All<Fixture>()
+                .Where(x => x.AwayGoals > x.HomeGoals)
+                .GroupBy(x => x.AwayTeam.Name, x => x.AwayGoals)
+                .Select(x => new { TeamName = x.Key, Goals = x.Sum() })
+                .OrderByDescending(x => x.Goals);
+
+            var topTeams = homeWins.Concat(awayWins)
+                .GroupBy(x => x.TeamName)
+                .Select(x => new { TeamName = x.Key, Goals = x.Sum(y => y.Goals) })
+                .OrderByDescending(x => x.Goals)
+                .Take(10)
+                .Select(x => new TopTeamViewModel
+                {
+                    Name = x.TeamName,
+                    Goals = x.Goals
+                })
+                .ToArray();
+
+            return topTeams;
+        }
     }
 }

@@ -18,5 +18,13 @@ namespace FootballMatchesWebApp.Application.Interfaces
         IEnumerable<TeamPlayerViewModel> SearchPlayerByName(int teamId, string name);
 
         TeamPlayerStatsViewModel GetTeamPlayerStats(int playerId);
+
+        IEnumerable<TopScorersViewModel> TopScorers();
+
+        IEnumerable<TopTeamViewModel> TopTeams();
+
+
+
+
     }
 }

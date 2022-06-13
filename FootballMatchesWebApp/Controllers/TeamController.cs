@@ -62,11 +62,28 @@ namespace FootballMatchesWebApp.Controllers
             return Redirect("/Team/TeamPlayers");
         }
 
+        [HttpGet]
         public IActionResult PlayerStats(int playerId)
         {
             var playerStats = teamService.GetTeamPlayerStats(playerId);
 
             return View(playerStats);
+        }
+
+        [HttpGet]
+        public IActionResult TopScorers()
+        {
+            var topScorers = teamService.TopScorers();
+
+            return View(topScorers);
+        }
+
+        [HttpGet]
+        public IActionResult TopTeams()
+        {
+            var topTeams = teamService.TopTeams();
+
+            return View(topTeams);
         }
     }
 }

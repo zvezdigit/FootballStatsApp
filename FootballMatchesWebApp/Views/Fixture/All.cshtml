@@ -1,0 +1,61 @@
+﻿@using FootballMatchesWebApp.Application.Models.Fixtures
+@model IEnumerable<FixtureViewModel>
+@{
+    ViewData["Title"] = "Teams";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Fixtures</h3>
+                <div class="card-tools">
+                       <form asp-action="All" asp-controller="Fixture" method="post" >
+                        <p>
+                    <div class="input-group input-group-sm" style="width: 150px;">
+                        <input type="text" placeholder = "Enter Team..." name="TeamName" class="form-control float-right" >
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-default">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    </p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card-body table-responsive p-0">
+                <table class="table table-hover text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>League</th>
+                            <th>Date</th>
+                            <th>Referee</th>
+                            <th>Home Goals</th>
+                            <th>Away Goals</th>
+                             <th>Home Team</th>
+                                <th>Away Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var fixture in @Model)
+                        {
+                            <tr>
+                                <td>@fixture.Id</td>
+                                <td>@fixture.League.LeagueName</td>
+                                <td>@fixture.Date</td>
+                                 <td>@fixture.Referee</td>
+                                  <td>@fixture.HomeGoals</td>
+                                   <td>@fixture.AwayGoals</td>
+                                     <td>@fixture.HomeTeam.Name</td>
+                                   <td>@fixture.AwayTeam.Name</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

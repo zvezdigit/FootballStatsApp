@@ -14,7 +14,8 @@ namespace FootballMatchesWebApp.Extensions
             services
 
                 .AddScoped<IRepository, Repository>()
-                .AddScoped<ITeamService, TeamService>();
+                .AddScoped<ITeamService, TeamService>()
+                .AddScoped<IFixtureService, FixtureService>();
 
 
             return services;

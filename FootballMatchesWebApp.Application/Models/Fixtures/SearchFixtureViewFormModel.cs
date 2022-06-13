@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace FootballMatchesWebApp.Application.Models.Fixtures
 {
-    public class FixtureViewModelcs
+    public class SearchFixtureViewFormModel
     {
-
+        public string TeamName { get; set; }
     }
 }
