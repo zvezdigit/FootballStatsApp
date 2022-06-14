@@ -14,5 +14,7 @@ namespace FootballMatchesWebApp.Application.Interfaces
         Task<PagedListViewModel<FixtureViewModel>> GetAllFixtures(int pageNo, int pageSize);
 
         Task<PagedListViewModel<FixtureViewModel>> SearchFixturesByName(string name, int pageNo, int pageSize);
+
+        IEnumerable<LeagueListViewModel> GetAllLeagues();
     }
 }

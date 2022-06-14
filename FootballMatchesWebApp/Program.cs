@@ -8,8 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("FootballMatchesWebApp") ?? throw new InvalidOperationException("Connection string 'FootballMatchesDbContextConnection' not found.");
 
 builder.Services.AddDbContext<FootballMatchesDbContext>(options =>
-    options.UseSqlServer(connectionString));;
+    options.UseSqlServer(connectionString));
 
+builder.Services.AddHttpClient();
 
 // Add services to the container
 

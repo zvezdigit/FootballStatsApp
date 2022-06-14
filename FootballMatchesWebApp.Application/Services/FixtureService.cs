@@ -64,6 +64,16 @@ namespace FootballMatchesWebApp.Application.Services
             return result;
         }
 
+        public IEnumerable<LeagueListViewModel> GetAllLeagues()
+        {
+            return repository.All<League>()
+                 .Select(x => new LeagueListViewModel
+                 {
+                     LeagueId=x.Id,
+                     LeagueName=x.Name
+                 }).ToList();
+        }
+
         public async Task<PagedListViewModel<FixtureViewModel>> SearchFixturesByName(string name, int pageNo, int pageSize)
         {
             PagedListViewModel<FixtureViewModel> result = new PagedListViewModel<FixtureViewModel>()

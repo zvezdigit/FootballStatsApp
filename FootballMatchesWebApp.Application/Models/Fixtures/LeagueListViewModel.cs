@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FootballMatchesWebApp.Application.Models.Teams
+namespace FootballMatchesWebApp.Application.Models.Fixtures
 {
-    public class PlayerLeagueViewModel
+    public class LeagueListViewModel
     {
+        public int LeagueId { get; set; }
 
         public string LeagueName { get; set; }
-
-      
     }
 }
