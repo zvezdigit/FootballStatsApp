@@ -64,13 +64,30 @@ namespace FootballMatchesWebApp.Application.Services
             return result;
         }
 
-        public IEnumerable<FixtureViewModel> SearchFixturesByName(string name)
+        public async Task<PagedListViewModel<FixtureViewModel>> SearchFixturesByName(string name, int pageNo, int pageSize)
         {
-            var fixtures = repository.All<Fixture>()
+            PagedListViewModel<FixtureViewModel> result = new PagedListViewModel<FixtureViewModel>()
+            {
+                PageNo = pageNo,
+                PageSize = pageSize,
+                Model = name
+
+            };
+
+            result.TotalRecords = await repository.All<Fixture>()
+             .Include(x => x.AwayTeam)
+             .Include(x => x.HomeTeam)
+             .Include(x => x.League)
+             .Where(x => x.AwayTeam.Name.Contains(name) || x.HomeTeam.Name.Contains(name))
+             .CountAsync();
+
+            var fixtures = await repository.All<Fixture>()
              .Include(x => x.AwayTeam)
              .Include(x => x.HomeTeam)
              .Include(x => x.League)
              .Where(x=>x.AwayTeam.Name.Contains(name) || x.HomeTeam.Name.Contains(name))
+             .Skip(pageNo * pageSize - pageSize)
+                 .Take(pageSize)
              .Select(x => new FixtureViewModel
              {
                  Id = x.Id,
@@ -90,9 +107,11 @@ namespace FootballMatchesWebApp.Application.Services
                  {
                      Name = x.HomeTeam.Name
                  }
-             }).ToList();
+             }).ToListAsync();
 
-            return fixtures;
+            result.Items=fixtures;
+
+            return result;
         }
     }
 }

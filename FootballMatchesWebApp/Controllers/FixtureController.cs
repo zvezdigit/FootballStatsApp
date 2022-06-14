@@ -25,21 +25,16 @@ namespace FootballMatchesWebApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> All(SearchFixtureViewFormModel model)
+        public async Task<IActionResult> All(SearchFixtureViewFormModel model, int p=1, int s=10)
         {
             ViewBag.IsSearch = true;
 
             if (!String.IsNullOrEmpty(model.TeamName))
             {
-                var fixtures = fixtureService.SearchFixturesByName(model.TeamName);
+                var fixtures = await fixtureService.SearchFixturesByName(model.TeamName, p, s);
 
-                return  View(new PagedListViewModel<FixtureViewModel>
-                {
-                    Items = fixtures.ToList(),
-                    PageNo = 1,
-                    PageSize = 10,
-                    TotalRecords = fixtures.Count()
-                });
+                return  View(fixtures);
+
             }
 
             return await All();
