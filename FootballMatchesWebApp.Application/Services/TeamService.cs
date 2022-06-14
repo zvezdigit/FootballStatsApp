@@ -1,13 +1,10 @@
 ﻿using FootballMatchesWebApp.Application.Interfaces;
+using FootballMatchesWebApp.Application.Models;
 using FootballMatchesWebApp.Application.Models.Teams;
 using FootballMatchesWebApp.Data.Data.Common;
 using FootballMatchesWebApp.Data.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace FootballMatchesWebApp.Application.Services
 {
@@ -22,10 +19,21 @@ namespace FootballMatchesWebApp.Application.Services
               repository = _repository;
         }
 
-        public IEnumerable<TeamViewModel> GetAllTeams()
+        public async Task<PagedListViewModel<TeamViewModel>> GetAllTeams(int pageNo, int pageSize)
         {
-            return repository.All<Team>()
+            PagedListViewModel<TeamViewModel> result = new PagedListViewModel<TeamViewModel>()
+            {
+                PageNo = pageNo,
+                PageSize = pageSize
+            };
+
+            result.TotalRecords = await repository.All<Team>().CountAsync();
+
+            var teams = await repository.All<Team>()
                  .Include(x => x.Venue)
+                 .OrderBy(x => x.Name)
+                 .Skip(pageNo * pageSize - pageSize)
+                 .Take(pageSize)                 
                  .Select(team => new TeamViewModel
                  {
                      TeamId = team.Id,
@@ -33,11 +41,13 @@ namespace FootballMatchesWebApp.Application.Services
                      Country = team.Country,
                      Founded = team.Founded,
                      Name = team.Name,
-                     Venue = new VenueViewModel {  VenueName = team.Venue.Name }
-                 }).ToList();
-        }
+                     Venue = new VenueViewModel { VenueName = team.Venue.Name }
+                 }).ToListAsync();
 
-       
+            result.Items = teams;
+
+            return result;
+        }              
 
         public IEnumerable<TeamViewModel> SearchTeamsByName(string name)
         {

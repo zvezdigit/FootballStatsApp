@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using FootballMatchesWebApp.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using FootballMatchesWebApp.Application.Models.Teams;
+using FootballMatchesWebApp.Application.Models;
 
 namespace FootballMatchesWebApp.Controllers
 {
@@ -17,25 +18,34 @@ namespace FootballMatchesWebApp.Controllers
         }
 
         [HttpGet]
-        public IActionResult All()
+        public async Task<IActionResult> All(int p = 1, int s = 10)
         {
-            var allTeams = teamService.GetAllTeams();
+            ViewBag.IsSearch = false;
+
+            var allTeams = await teamService.GetAllTeams(p,s);
 
             return View(allTeams);
         }
 
         [HttpPost]
-        public IActionResult All(SearchTeamViewFormModel model)
+        public async Task<IActionResult> All(SearchTeamViewFormModel model)
         {
-          
-                        
+            ViewBag.IsSearch = true;
+
             if (!String.IsNullOrEmpty(model.TeamName))
             {
                 var teams = teamService.SearchTeamsByName(model.TeamName);
-                return View(teams);
+
+                return View(new PagedListViewModel<TeamViewModel>
+                {
+                    Items = teams.ToList(),
+                    PageNo = 1,
+                    PageSize = 10,
+                    TotalRecords = teams.Count()
+                });
             }
 
-            return All();
+            return await All();
         }
 
         [HttpGet]

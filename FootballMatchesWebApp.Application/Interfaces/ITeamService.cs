@@ -1,4 +1,5 @@
-﻿using FootballMatchesWebApp.Application.Models.Teams;
+﻿using FootballMatchesWebApp.Application.Models;
+using FootballMatchesWebApp.Application.Models.Teams;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace FootballMatchesWebApp.Application.Interfaces
 {
     public interface ITeamService
     {
-        IEnumerable<TeamViewModel> GetAllTeams();
+        Task<PagedListViewModel<TeamViewModel>> GetAllTeams(int pageNo, int pageSize );
 
         IEnumerable<TeamViewModel> SearchTeamsByName(string name);
 
