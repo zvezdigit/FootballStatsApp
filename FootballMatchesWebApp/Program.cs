@@ -30,6 +30,19 @@ builder.Services.AddDefaultIdentity<ApplicationUser>
     (options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<FootballMatchesDbContext>();
 
+builder.Services.AddSession(options =>
+options.Cookie.HttpOnly = true);
+
+builder.Services.Configure<CookiePolicyOptions>(options =>
+{
+    // This lambda determines whether user consent for non-essential 
+    // cookies is needed for a given request.
+    options.CheckConsentNeeded = context => true;
+    // requires using Microsoft.AspNetCore.Http;
+    options.MinimumSameSitePolicy = SameSiteMode.None;
+});
+
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
@@ -48,6 +61,8 @@ else
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseCookiePolicy();
 
 app.UseRouting();
 
