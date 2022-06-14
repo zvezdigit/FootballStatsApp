@@ -1,4 +1,5 @@
-﻿using FootballMatchesWebApp.Application.Models.Fixtures;
+﻿using FootballMatchesWebApp.Application.Models;
+using FootballMatchesWebApp.Application.Models.Fixtures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace FootballMatchesWebApp.Application.Interfaces
     public interface IFixtureService
     {
 
-        IEnumerable<FixtureViewModel> GetAllFixtures();
+        Task<PagedListViewModel<FixtureViewModel>> GetAllFixtures(int pageNo, int pageSize);
 
         IEnumerable<FixtureViewModel> SearchFixturesByName(string name);
     }

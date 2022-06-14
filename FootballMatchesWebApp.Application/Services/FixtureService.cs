@@ -1,5 +1,7 @@
 ﻿using FootballMatchesWebApp.Application.Interfaces;
+using FootballMatchesWebApp.Application.Models;
 using FootballMatchesWebApp.Application.Models.Fixtures;
+using FootballMatchesWebApp.Application.Models.Teams;
 using FootballMatchesWebApp.Data.Data.Common;
 using FootballMatchesWebApp.Data.Entities;
 using Microsoft.EntityFrameworkCore;
@@ -20,12 +22,23 @@ namespace FootballMatchesWebApp.Application.Services
             this.repository = _repository;
         }
 
-        public IEnumerable<FixtureViewModel> GetAllFixtures()
+        public async Task<PagedListViewModel<FixtureViewModel>> GetAllFixtures(int pageNo, int pageSize)
         {
-            var fixtures = repository.All<Fixture>()
+
+            PagedListViewModel<FixtureViewModel> result = new PagedListViewModel<FixtureViewModel>()
+            {
+                PageNo = pageNo,
+                PageSize = pageSize
+            };
+
+            result.TotalRecords = await repository.All<Fixture>().CountAsync();
+
+            var fixtures = await repository.All<Fixture>()
                 .Include(x=>x.AwayTeam)
                 .Include(x=>x.HomeTeam)
                 .Include(x=>x.League)
+                .Skip(pageNo * pageSize - pageSize)
+                 .Take(pageSize)
                 .Select(x=>new FixtureViewModel
                 {
                     Id=x.Id,
@@ -44,9 +57,11 @@ namespace FootballMatchesWebApp.Application.Services
                     {
                         Name = x.HomeTeam.Name
                     }
-                }).ToList();
+                }).ToListAsync();
 
-            return fixtures;
+            result.Items = fixtures;
+
+            return result;
         }
 
         public IEnumerable<FixtureViewModel> SearchFixturesByName(string name)
