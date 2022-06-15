@@ -17,7 +17,7 @@ namespace FootballMatchesWebApp.Controllers
         {
             await dataImporter.ImportDataAsync();
 
-            return Redirect("/Home");
+            return View();
         }
     }
 }
