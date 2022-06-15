@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FootballMatchesWebApp.Controllers
 {
-    public class DataConroller : Controller
+    public class DataController : Controller
     {
         private readonly DataImporter dataImporter;
 
-        public DataConroller(DataImporter dataImporter)
+        public DataController(DataImporter dataImporter)
         {
             this.dataImporter = dataImporter;
         }
@@ -16,7 +16,8 @@ namespace FootballMatchesWebApp.Controllers
         public async Task<IActionResult> Seed()
         {
             await dataImporter.ImportDataAsync();
-            return Ok();
+
+            return Redirect("/Home");
         }
     }
 }
