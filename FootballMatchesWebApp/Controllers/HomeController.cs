@@ -14,14 +14,16 @@ namespace FootballMatchesWebApp.Controllers
         private readonly DataImporter dataImporter;
         private readonly IHttpClientFactory httpClientFactory;
         private readonly IFixtureService fixtureService;
+        private readonly IConfiguration configuration;
 
         public HomeController(ILogger<HomeController> logger, DataImporter dataImporter
-            , IHttpClientFactory httpClientFactory, IFixtureService fixtureService)
+            , IHttpClientFactory httpClientFactory, IFixtureService fixtureService, IConfiguration configuration)
         {
             _logger = logger;
             this.dataImporter = dataImporter;
             this.httpClientFactory = httpClientFactory;
             this.fixtureService = fixtureService;
+            this.configuration = configuration;
         }
 
         public IActionResult Index()
@@ -52,67 +54,69 @@ namespace FootballMatchesWebApp.Controllers
 
 
 
-        //import Data manually via UserInterface 
-        //    [HttpPost]
-        //    public async Task<IActionResult> Import(ImportDataFormViewModel model)
-        //    {
-        //        var client = httpClientFactory.CreateClient();
+        //import Data manually via UserInterface
+            [HttpPost]
+            public async Task<IActionResult> Import(ImportDataFormViewModel model)
+        {
+            var client = httpClientFactory.CreateClient();
 
-        //        client.BaseAddress = new Uri("https://v3.football.api-sports.io");
-        //        client.DefaultRequestHeaders.Add("x-apisports-key", "50bf08bb7425183811257ad2d0667ea1"); //to add user secrets
+            client.BaseAddress = new Uri("https://v3.football.api-sports.io");
 
-        //        int requestCounter = 0;
+            var apiKey = configuration["ApiKey"];
+            client.DefaultRequestHeaders.Add("x-apisports-key", apiKey); //to add user secrets
 
-        //        var teams = await client.GetStringAsync($"/teams?league={model.LeagueId}&season={model.Season}");            
-        //        var fixtures = await client.GetStringAsync($"/fixtures?league={model.LeagueId}&season={model.Season}");
+            int requestCounter = 0;
 
-        //        var allPlayers = new List<string>();
+            var teams = await client.GetStringAsync($"/teams?league={model.LeagueId}&season={model.Season}");
+            var fixtures = await client.GetStringAsync($"/fixtures?league={model.LeagueId}&season={model.Season}");
 
-        //        var players = await client.GetStringAsync($"/players?league={model.LeagueId}&season={model.Season}&page=1");
-        //        allPlayers.Add(players);
+            var allPlayers = new List<string>();
 
-        //        int pages = JsonConvert.DeserializeObject<ApiResponse>(players)!.Paging.Total;
+            var players = await client.GetStringAsync($"/players?league={model.LeagueId}&season={model.Season}&page=1");
+            allPlayers.Add(players);
 
-        //        requestCounter += 3;
+            int pages = JsonConvert.DeserializeObject<ApiResponse>(players)!.Paging.Total;
 
-        //        for (int i = 2; i < pages; i++) 
-        //        {
-        //            players = await client.GetStringAsync($"/players?league={model.LeagueId}&season={model.Season}&page={i}");
-        //            allPlayers.Add(players);
+            requestCounter += 3;
 
-        //            requestCounter++;
+            for (int i = 2; i < pages; i++)
+            {
+                players = await client.GetStringAsync($"/players?league={model.LeagueId}&season={model.Season}&page={i}");
+                allPlayers.Add(players);
 
-        //            if(requestCounter % 10 == 0)
-        //            {
-        //                await Task.Delay(TimeSpan.FromSeconds(61));
-        //            }
-        //        }
+                requestCounter++;
 
-        //        if (!ModelState.IsValid)
-        //        {
-        //            ViewBag.Leagues = fixtureService.GetAllLeagues().ToList();
-        //            return View(model);
-        //        }
+                if (requestCounter % 10 == 0)
+                {
+                    await Task.Delay(TimeSpan.FromSeconds(61));
+                }
+            }
 
-        //        await dataImporter.ImportDataAsync(model.LeagueId, fixtures, teams, allPlayers.ToArray());
-        //        return Ok();
-        //    }
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Leagues = fixtureService.GetAllLeagues().ToList();
+                return View(model);
+            }
 
-        //    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        //    public IActionResult Error()
-        //    {
-        //        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        //    }
-        //}
+            await dataImporter.ImportDataAsync(model.LeagueId, fixtures, teams, allPlayers.ToArray());
+            return Ok();
+        }
 
-        //public class ApiResponse
-        //{
-        //    public Paging Paging { get; set; }
-        //}
-
-        //public class Paging
-        //{
-        //    public int Total { get; set; }
-        //}
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
     }
+
+    public class ApiResponse
+    {
+        public Paging Paging { get; set; }
+    }
+
+    public class Paging
+    {
+        public int Total { get; set; }
+    }
+}
 }
