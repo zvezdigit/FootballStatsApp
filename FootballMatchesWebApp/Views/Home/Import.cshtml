@@ -12,7 +12,7 @@
           <div class="card-body">
  <div class="form-group">
                             <label asp-for="LeagueId">League</label>
-                            <select asp-for="LeagueId" asp-items="@(new SelectList( ViewBag.Leagues, nameof(LeagueListViewModel.LeagueId), nameof(LeagueListViewModel.LeagueName)))" class="form-control custom-select">
+                            <select asp-for="LeagueId" asp-items="@(new SelectList(ViewBag.Leagues, nameof(LeagueListViewModel.LeagueId), nameof(LeagueListViewModel.LeagueName)))" class="form-control custom-select">
                                 <option selected="" disabled="">Select one</option>
                             </select>
                             <span asp-validation-for="LeagueId" class="text-danger"></span>

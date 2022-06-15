@@ -11,23 +11,23 @@
             <div class="card-header">
                 <h3 class="card-title">Fixtures</h3>
                 <div class="card-tools">
-                       <form asp-action="All" asp-controller="Fixture" method="post" >
+                    <form asp-action="All" asp-controller="Fixture" method="post">
                         <p>
-                    <div class="input-group input-group-sm" style="width: 150px;">
-                        <input type="text" placeholder = "Enter Team..." name="TeamName" class="form-control float-right" >
-                        <div class="input-group-append">
-                            <button type="submit" class="btn btn-default">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </div>
-                    </p>
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                                <input type="text" placeholder="Enter Team..." name="TeamName" class="form-control float-right">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </p>
                     </form>
                 </div>
             </div>
 
             <div class="card-body table-responsive p-0">
-                <table class="table table-hover text-nowrap">
+                <table class="table table-hover text-nowrap mb-3">
                     <thead>
                         <tr>
                             <th>League</th>
@@ -35,8 +35,8 @@
                             <th>Referee</th>
                             <th>Home Goals</th>
                             <th>Away Goals</th>
-                             <th>Home Team</th>
-                                <th>Away Team</th>
+                            <th>Home Team</th>
+                            <th>Away Team</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -44,25 +44,24 @@
                         {
                             <tr>
                                 <td>@fixture.League.LeagueName</td>
-                                <td>@fixture.Date</td>
-                                 <td>@fixture.Referee</td>
-                                  <td>@fixture.HomeGoals</td>
-                                   <td>@fixture.AwayGoals</td>
-                                     <td>@fixture.HomeTeam.Name</td>
-                                   <td>@fixture.AwayTeam.Name</td>
+                                <td>@fixture.Date.ToString("dd MMM yyyy HH:mm")</td>
+                                <td>@fixture.Referee</td>
+                                <td>@fixture.HomeGoals</td>
+                                <td>@fixture.AwayGoals</td>
+                                <td>@fixture.HomeTeam.Name</td>
+                                <td>@fixture.AwayTeam.Name</td>
                             </tr>
                         }
                     </tbody>
                 </table>
-              
-                {
-                    <paging 
-                    page-no="@Model.PageNo" 
-                    page-size="@Model.PageSize" 
-                    total-records="@Model.TotalRecords"
-                    page-size-dropdown-items="5-10-25">
-                    </paging> 
-                }   
+
+                
+                <paging page-no="@Model.PageNo"
+                        page-size="@Model.PageSize"
+                        total-records="@Model.TotalRecords"
+                        page-size-dropdown-items="5-10-25">
+                </paging>
+                
             </div>
         </div>
     </div>

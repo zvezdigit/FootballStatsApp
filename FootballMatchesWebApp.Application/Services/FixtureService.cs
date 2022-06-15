@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace FootballMatchesWebApp.Application.Services
 {
-    public class FixtureService: IFixtureService
+    public class FixtureService : IFixtureService
     {
         private readonly IRepository repository;
 
@@ -34,15 +34,16 @@ namespace FootballMatchesWebApp.Application.Services
             result.TotalRecords = await repository.All<Fixture>().CountAsync();
 
             var fixtures = await repository.All<Fixture>()
-                .Include(x=>x.AwayTeam)
-                .Include(x=>x.HomeTeam)
-                .Include(x=>x.League)
+                .Include(x => x.AwayTeam)
+                .Include(x => x.HomeTeam)
+                .Include(x => x.League)
                 .Skip(pageNo * pageSize - pageSize)
                  .Take(pageSize)
-                .Select(x=>new FixtureViewModel
+                .Select(x => new FixtureViewModel
                 {
-                    Id=x.Id,
-                    League=new Models.Teams.PlayerLeagueViewModel { 
+                    Id = x.Id,
+                    League = new Models.Teams.PlayerLeagueViewModel
+                    {
                         LeagueName = x.League.Name
                     },
                     AwayGoals = x.AwayGoals,
@@ -69,8 +70,8 @@ namespace FootballMatchesWebApp.Application.Services
             return repository.All<League>()
                  .Select(x => new LeagueListViewModel
                  {
-                     LeagueId=x.Id,
-                     LeagueName=x.Name
+                     LeagueId = x.Id,
+                     LeagueName = x.Name
                  }).ToList();
         }
 
@@ -95,7 +96,7 @@ namespace FootballMatchesWebApp.Application.Services
              .Include(x => x.AwayTeam)
              .Include(x => x.HomeTeam)
              .Include(x => x.League)
-             .Where(x=>x.AwayTeam.Name.Contains(name) || x.HomeTeam.Name.Contains(name))
+             .Where(x => x.AwayTeam.Name.Contains(name) || x.HomeTeam.Name.Contains(name))
              .Skip(pageNo * pageSize - pageSize)
                  .Take(pageSize)
              .Select(x => new FixtureViewModel
@@ -119,7 +120,7 @@ namespace FootballMatchesWebApp.Application.Services
                  }
              }).ToListAsync();
 
-            result.Items=fixtures;
+            result.Items = fixtures;
 
             return result;
         }
